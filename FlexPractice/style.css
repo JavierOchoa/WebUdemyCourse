@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#title {
+    background-color: aquamarine;
+    padding: 20px;
+    font-size: xx-large;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex: wrap;
+    background-color: black;
+    justify-content: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid red;
+}
+#content{
+    display: flex;
+    flex-wrap: wrap;
+}
+aside {
+    flex: 30%;
+    /* height: 500px;
+    width: 30%; */
+    background-color: peru;
+    /* text-align: justify; */
+    padding: 1%;
+}
+section {
+    flex: 70%;
+    /* height: 500px;
+    width: 70%; */
+    background-color: pink;
+    /* text-align: justify; */
+    padding: 1%;
+}
+
+@media screen and (max-width: 500px) {
+    #content, nav {
+        flex-direction: column;
+    }
+}

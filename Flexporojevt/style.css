@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+#container {
+    display: flex;
+    flex-wrap: wrap;
+}
+header {
+    flex-basis: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: aquamarine;
+}
+nav {
+    flex: 100%;
+    background-color: black;
+    padding: 1%;
+    text-align: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding-left: 10px;
+}
+aside {
+    flex: 30%;
+    background-color: blueviolet;
+}
+section {
+    flex: 70%;
+    background-color: brown;
+}
+
+aside, section {
+    padding: 1%;
+    text-align: justify;
+}
+
+footer {
+    flex: 100%;
+    background-color: slategrey;
+    text-align: center;
+}
+
+@media (max-width: 550px) {
+    aside {
+        display: none;
+    }
+}

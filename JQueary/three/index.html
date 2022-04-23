@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Jquery</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Star Wars</h1>
+            <p>wanna know more about your favorite characters?</p>
+        </div>
+        <div class="card-section">
+            <div class="card-box">
+<!--                <img src="https://s1.gaming-cdn.com/images/products/5721/271x377/juego-steam-death-stranding-cover.jpg" alt="" srcset="">-->
+                <img src="" alt="" srcset="">
+                <div class="info">
+                    <div class="info-item"><p id="name"></p></div>
+                    <div class="info-item"><p id="height"></p></div>
+                    <div class="info-item"><p id="gender"></p></div>
+                    <div class="info-item"><p id="species"></p></div>
+                </div>
+            </div>
+            <div class="button">
+                <button class="actualb">Another One</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".actualb").on('click', function (e) {
+                let randomNumber = Math.ceil(Math.random() * 89)
+                console.log(randomNumber)
+                $.get(`https://akabab.github.io/starwars-api/api/id/${randomNumber}.json`, function (data) {
+                    console.log(data.name)
+                    $("img").attr("src", data.image)
+                    $("#name").text(data.name)
+                    $("#height").text(data.height)
+                    $("#gender").text(data.gender)
+                    $("#species").text(data.species)
+                })
+                $(".card-box")
+                    .slideDown()
+                    .css('display', 'inline-flex')
+            })
+        })
+    </script>
+</body>
+</html>

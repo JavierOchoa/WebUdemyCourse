@@ -1,0 +1,114 @@
+/* Color Palette: https://coolors.co/palette/f9e0d9-e6dbd0-7d6167-754f5b-5d4954 */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #E6DBD0;
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 100;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hole {
+    /* background-color: tomato; */
+    flex-basis: 100%;
+    padding: 1rem;
+    display: inline-flex;
+    justify-content: center;
+    /* flex-direction: row; */
+    /* text-align: center; */
+    margin: auto;
+    /* display: inline-block; */
+    /* flex-direction: row; */
+}
+
+#logo {
+    max-width: 170px;
+    height: auto;
+    /* margin-right: 30rem; */
+    /* background-color: chartreuse; */
+}
+
+#top-bar {
+    /* text-align: right; */
+    /* background-color: lawngreen; */
+    /* margin-left: auto; */
+}
+
+.right-item {
+    display: inline-flex;
+    /* background-color: indigo; */
+    align-items: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+main {
+    /* background-color: lightgreen; */
+    padding-top: 1rem;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.intro-content {
+    /* background-color: red; */
+    display: inline-flex;
+    /* flex-direction: row-reverse; */
+    margin: auto;
+}
+
+.inside-border {
+    /* display: inline-flex; */
+    color: #5D4954;
+    margin: auto;
+}
+
+.inside-border h2 {
+    font-size: xxx-large;
+    font-family: 'JetBrains Mono';
+    font-style: italic;
+    font-weight: 400;
+}
+
+#me {
+    max-width: 300px;
+    height: auto;
+    /* margin: auto; */
+    border-radius: 50%;
+    margin-right: 3rem;
+}
+
+.description {
+    /* background-color: blue; */
+    font-size: larger;
+    margin: auto;
+    width: 500px;
+}
+
+.socials {
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.link-tree {
+    border: 2px solid #754F5B;
+    padding: 5px;
+    font-weight: bold;
+    margin: 0px 5px 0px 5px;
+}
+
+.link-tree a {
+    text-decoration: none;
+    color: #7D6167;
+}
+

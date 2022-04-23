@@ -1,0 +1,194 @@
+/* Color Palette: https://coolors.co/palette/f9e0d9-e6dbd0-7d6167-754f5b-5d4954 */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #E6DBD0;
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 100;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hole {
+    flex-basis: 100%;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.credits {
+    flex-basis: 100%;
+    padding: 1rem;
+    text-align: center;
+}
+
+#logo {
+    max-width: 170px;
+    height: auto;
+}
+
+.right-item {
+    display: inline-flex;
+    align-items: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+main {
+    padding-top: 1rem;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.masterh {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.menos {
+    display: flex;
+    /* background-color: #d52b81; */
+    /* text-align: center; */
+    margin: auto;
+}
+
+.masterh h2 {
+    /* display: none; */
+    color: #5D4954;
+    margin: auto;
+    font-size: xxx-large;
+    font-family: 'JetBrains Mono';
+    font-style: italic;
+    font-weight: 400;
+}
+
+.contenth {
+    color: #5D4954;
+    margin: auto;
+}
+
+.name-min {
+    display: none;
+}
+
+/* .max h2 {
+    font-size: xxx-large;
+    font-family: 'JetBrains Mono';
+    font-style: italic;
+    font-weight: 400;
+} */
+
+#me {
+    max-width: 300px;
+    padding: 1rem;
+    height: auto;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.description {
+    font-size: larger;
+    margin: auto;
+    width: 500px;
+}
+
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.link-tree {
+    font-weight: bold;
+    margin: 0px 5px 0px 5px;
+}
+
+.link-tree a {
+    border: 2px solid #754F5B;
+    padding: 5px;
+    text-decoration: none;
+    color: #7D6167;
+}
+
+#twitter a:hover {
+    color: white;
+    background-color: #55acee;
+    border: 2px solid white;
+}
+
+#instagram a:hover {
+    color: white;
+    background-color: #d52b81;
+    border: 2px solid #f78e25;
+}
+#github a:hover {
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+}
+#linkedin a:hover {
+    color: white;
+    background-color: #0a66c2;
+    border: 2px solid white;
+}
+
+/* .credits {
+    background-color: #d52b81;
+    flex-basis: 100%;
+    padding: 1rem;
+    text-align: center;
+} */
+
+@media screen and (max-width: 799px) {
+    .masterh {
+        margin-top: 1rem;
+    }
+    .contenth .name-max {
+        display: none;
+    }
+    .menos {
+        flex-direction: column-reverse;
+    }
+    .menos .name-min {
+        display: block;
+    }
+    #me {
+        max-width: 250px;
+    }
+    .description {
+        margin-top: 1rem;
+        /* font-size: medium;
+        width: 350px; */
+    }
+    .hole {
+        flex-basis: 100%;
+        padding: 0rem 0rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .description {
+        margin-top: 1rem;
+        font-size: medium;
+        width: 350px;
+    }
+    .socials {
+        display: grid;
+        justify-content: center;
+    }
+    .link-tree {
+        font-weight: bold;
+        margin: 0px 5px 20px 5px;
+    }
+}
